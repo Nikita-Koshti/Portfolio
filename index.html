@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nikita Koshti | FinTech Integration Specialist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: radial-gradient(circle at top, #020617, #020617 40%, #000);
+  color: #e2e8f0;
+  scroll-behavior: smooth;
+}
+
+/* HERO */
+
+.hero {
+  padding: 90px 20px;
+  text-align: center;
+  background: linear-gradient(180deg,#020617,#020617aa);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+  background: linear-gradient(90deg,#22d3ee,#a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.typing {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #94a3b8;
+  min-height: 28px;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid #1f2937;
+  background: #020617;
+  color: #22d3ee;
+  text-decoration: none;
+  margin: 8px;
+  display: inline-block;
+  transition: .3s;
+}
+
+.btn:hover {
+  border-color: #22d3ee;
+  transform: translateY(-2px);
+}
+
+/* NAV */
+
+nav {
+  position: sticky;
+  top: 0;
+  background: #000;
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #111827;
+  z-index: 1000;
+}
+
+nav a {
+  color: #94a3b8;
+  text-decoration: none;
+  margin: 0 18px;
+  font-weight: 600;
+}
+
+nav a:hover { color: #22d3ee; }
+
+/* SECTION */
+
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 70px 20px;
+}
+
+.section-title {
+  font-size: 30px;
+  margin-bottom: 35px;
+  color: #facc15;
+}
+
+/* CARDS */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 22px;
+}
+
+.card {
+  background: linear-gradient(180deg,#020617,#020617aa);
+  padding: 26px;
+  border-radius: 14px;
+  border: 1px solid #111827;
+  transition: .3s;
+}
+
+.card:hover {
+  border-color: #22d3ee;
+  transform: translateY(-6px);
+}
+
+/* METRICS */
+
+.metric {
+  font-size: 34px;
+  font-weight: 800;
+  color: #22d3ee;
+}
+
+/* TIMELINE */
+
+.timeline {
+  border-left: 2px solid #22d3ee;
+  padding-left: 24px;
+}
+
+.timeline-item {
+  margin-bottom: 28px;
+}
+
+/* SKILLS */
+
+.skills span {
+  display: inline-block;
+  padding: 9px 14px;
+  border-radius: 20px;
+  border: 1px solid #1f2937;
+  margin: 6px;
+  font-size: 14px;
+  background: #020617;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 40px;
+  border-top: 1px solid #111827;
+  opacity: .7;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<div class="hero">
+  <h1>Nikita Koshti</h1>
+  <div class="typing" id="typing"></div>
+
+  <div class="hero-buttons">
+    <a class="btn" href="#impact">View Impact</a>
+    <a class="btn" href="NikitaKoshtiCV.pdf" download>Download CV</a>
+  </div>
+</div>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#impact">Impact</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#insights">Insights</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT -->
+
+<section id="about">
+<h2 class="section-title">Profile Summary</h2>
+<p>
+Integration & Deployment Analyst in global trading environments with deep experience in
+FIX connectivity, low-latency systems, production change governance, and cross-team fintech
+integration. Strong blend of product thinking + technical execution + stakeholder alignment.
+Focused on reliable, scalable trading infrastructure.
+</p>
+</section>
+
+<!-- IMPACT -->
+
+<section id="impact">
+<h2 class="section-title">Quantified Impact</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="metric" data-count="100">0</div>
+Trade Flow Issues Resolved
+</div>
+
+<div class="card">
+<div class="metric" data-count="50">0</div>
+Production Changes Reviewed / Month
+</div>
+
+<div class="card">
+<div class="metric" data-count="20">0</div>
+Client Deployments
+</div>
+
+<div class="card">
+<div class="metric" data-count="25">0</div>
+Automation Efficiency Gain %
+</div>
+
+</div>
+</section>
+
+<!-- PORTFOLIO -->
+
+<section id="portfolio">
+<h2 class="section-title">Integration & Product Portfolio</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Trading Flow Onboarding</h3>
+<p>Multi-asset onboarding, migration & pipe-cleaning validation across equities and derivatives.</p>
+</div>
+
+<div class="card">
+<h3>FIX Certification</h3>
+<p>Broker & bank FIX connectivity certification, production + UAT validation flows.</p>
+</div>
+
+<div class="card">
+<h3>Latency Optimization</h3>
+<p>Regression analysis and performance tuning for trading environments.</p>
+</div>
+
+<div class="card">
+<h3>Automation Scripts</h3>
+<p>Linux & Bash tooling to reduce manual operational overhead.</p>
+</div>
+
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+<h2 class="section-title">Experience Timeline</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Integration & Deployment Analyst — Squarepoint Capital</h3>
+<p>CAB governance, onboarding, automation, cross-team integration.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Technical Analyst — Singapore Exchange FX</h3>
+<p>FX client deployments, performance tuning, global client support.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Associate Technical Analyst — FlexTrade</h3>
+<p>FIX onboarding, API integrations, broker connectivity.</p>
+</div>
+
+</div>
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+<h2 class="section-title">Core Capabilities</h2>
+
+<div class="skills">
+<span>Linux</span>
+<span>Bash</span>
+<span>FIX Protocol</span>
+<span>KDB+</span>
+<span>JavaScript</span>
+<span>Git</span>
+<span>JIRA</span>
+<span>Trading Systems</span>
+<span>Client Integration</span>
+<span>Production Governance</span>
+<span>Risk Analysis</span>
+<span>Product Thinking</span>
+</div>
+
+</section>
+
+<!-- INSIGHTS -->
+
+<section id="insights">
+<h2 class="section-title">FinTech Insights (Coming Soon)</h2>
+
+<div class="card">
+Future section for articles on trading system reliability, FIX onboarding patterns,
+production change safety, and product-driven integration strategy.
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+
+<p>Email: koshtinikita31@gmail.com</p>
+<p>LinkedIn: linkedin.com/in/nikita-koshti-54808a1ab</p>
+
+</section>
+
+<footer>
+© 2026 Nikita Koshti — FinTech Integration & Product Operations
+</footer>
+
+<script>
+
+/* Typing animation */
+
+const roles = [
+"FinTech Integration Specialist",
+"Trading Systems Analyst",
+"FIX & Deployment Expert",
+"Product-Driven Technologist"
+];
+
+let i=0, j=0, current="", isDeleting=false;
+
+function type(){
+  current = roles[i];
+  if(!isDeleting){
+    document.getElementById("typing").textContent = current.slice(0,++j);
+    if(j===current.length){ isDeleting=true; setTimeout(type,1200); return;}
+  } else {
+    document.getElementById("typing").textContent = current.slice(0,--j);
+    if(j===0){ isDeleting=false; i=(i+1)%roles.length; }
+  }
+  setTimeout(type, isDeleting?40:80);
+}
+type();
+
+/* Metric counter */
+
+const counters = document.querySelectorAll('.metric');
+
+counters.forEach(c=>{
+  const target = +c.dataset.count;
+  let n = 0;
+  const step = target/60;
+
+  function update(){
+    n += step;
+    if(n < target){
+      c.textContent = Math.floor(n);
+      requestAnimationFrame(update);
+    } else {
+      c.textContent = target;
+    }
+  }
+  update();
+});
+
+</script>
+
+</body>
+</html>
