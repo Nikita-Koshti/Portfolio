@@ -1,283 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Nikita Koshti | Integration & Deployment Analyst</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #f8fafc;
-  color: #1e293b;
-}
-
-/* HEADER */
-
-header {
-  background: linear-gradient(135deg,#2563eb,#1e40af);
-  padding: 60px 20px;
-  text-align: center;
-  color: white;
-}
-
-.profile-photo {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid white;
-  margin-bottom: 20px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
-
-header h1 {
-  font-size: 42px;
-  margin: 10px 0 5px;
-}
-
-header p {
-  font-size: 18px;
-  opacity: 0.95;
-}
-
-/* NAV */
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 15px;
-  background: white;
-  position: sticky;
-  top: 0;
-  border-bottom: 1px solid #e2e8f0;
-  z-index: 10;
-}
-
-nav a {
-  color: #1e40af;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-nav a:hover {
-  color: #2563eb;
-}
-
-/* SECTIONS */
-
-section {
-  max-width: 1000px;
-  margin: auto;
-  padding: 60px 20px;
-}
-
-.section-title {
-  font-size: 28px;
-  margin-bottom: 30px;
-  color: #1e40af;
-}
-
-/* CARDS */
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  padding: 25px;
-  border-radius: 14px;
-  border: 1px solid #e2e8f0;
-  transition: 0.3s;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  border-color: #2563eb;
-  box-shadow: 0 10px 24px rgba(37,99,235,0.15);
-}
-
-/* TIMELINE */
-
-.timeline {
-  border-left: 3px solid #2563eb;
-  padding-left: 20px;
-}
-
-.timeline-item {
-  margin-bottom: 30px;
-}
-
-.timeline-item h3 {
-  margin: 0;
-  color: #2563eb;
-}
-
-/* SKILLS */
-
-.skills span {
-  display: inline-block;
-  background: #eff6ff;
-  padding: 8px 14px;
-  margin: 6px;
-  border-radius: 20px;
-  border: 1px solid #bfdbfe;
-  font-size: 14px;
-  color: #1e40af;
-  font-weight: 600;
-}
-
-/* CONTACT */
-
-.contact a {
-  color: #2563eb;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* FOOTER */
-
-footer {
-  text-align: center;
-  padding: 30px;
-  border-top: 1px solid #e2e8f0;
-  background: white;
-  color: #475569;
-}
-
-</style>
+    <meta charset="UTF-8">
+    <title>Nikita Koshti | Integration & Deployment Analyst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-50 text-gray-900 font-sans">
 
-<header>
-  <img src="profile.png" alt="Nikita Koshti" class="profile-photo">
-  <h1>Nikita Koshti</h1>
-  <p>Integration & Deployment Analyst | Trading Systems | FinTech Operations</p>
-</header>
-
-<nav>
-  <a href="#about">About</a>
-  <a href="#impact">Impact</a>
-  <a href="#experience">Experience</a>
-  <a href="#skills">Skills</a>
-  <a href="#contact">Contact</a>
+<nav class="sticky top-0 z-50 bg-white shadow-sm py-4">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+        <span class="text-xl font-bold tracking-tighter text-blue-600">NIKITA KOSHTI</span>
+        <div class="space-x-6 hidden md:block">
+            <a href="#about" class="hover:text-blue-600 transition">About</a>
+            <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
+            <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+            <a href="mailto:koshtinikita31@gmail.com" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Contact</a>
+        </div>
+    </div>
 </nav>
 
-<section id="about">
-  <h2 class="section-title">About Me</h2>
-  <p>
-Result-oriented Integration & Deployment Analyst with 3+ years experience in trading systems,
-FIX connectivity, client onboarding, and production change governance. I work at the
-intersection of finance and technology, delivering low-latency, high-reliability trading
-infrastructure with strong stakeholder collaboration and product thinking.
-  </p>
+<section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+        <div class="md:w-2/3">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+                Integration & Deployment Analyst
+            </h1>
+            <p class="text-xl text-gray-600 mb-6 leading-relaxed">
+                Result-oriented IDM Analyst at Squarepoint Capital with 3+ years of experience in 
+                Financial Markets, Trading Systems, FIX Protocol integrations, and Production Support. 
+                Skilled in Linux, KDB+, JavaScript, and Git with expertise in trading flow onboarding, 
+                latency optimization, risk analysis, and cross-functional collaboration.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <span>📍 Bengaluru, Karnataka</span>
+                <span>📞 9420608329</span>
+                <span>📧 koshtinikita31@gmail.com</span>
+                <a href="https://www.linkedin.com/in/nikita-koshti-54808a1ab/" target="_blank" class="text-blue-600">LinkedIn</a>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="impact">
-  <h2 class="section-title">Impact Highlights</h2>
-
-  <div class="card-grid">
-    <div class="card">
-      <h3>99.9% Uptime Governance</h3>
-      <p>CAB member approving 50+ production changes monthly</p>
+<section class="bg-blue-600 py-12 text-white">
+    <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div><div class="text-3xl font-bold">3+ Years</div><div>Experience</div></div>
+        <div><div class="text-3xl font-bold">100+</div><div>Trade Issues Resolved</div></div>
+        <div><div class="text-3xl font-bold">99.9%</div><div>System Uptime</div></div>
+        <div><div class="text-3xl font-bold">20+</div><div>Trading Deployments</div></div>
     </div>
-
-    <div class="card">
-      <h3>100+ Trade Issues Solved</h3>
-      <p>95% first-response success rate</p>
-    </div>
-
-    <div class="card">
-      <h3>20+ Client Deployments</h3>
-      <p>Trading system rollouts across global FX clients</p>
-    </div>
-
-    <div class="card">
-      <h3>Latency Reduced</h3>
-      <p>Performance optimization & regression analysis</p>
-    </div>
-  </div>
 </section>
 
-<section id="experience">
-  <h2 class="section-title">Experience</h2>
+<section id="experience" class="py-20">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold mb-12 text-center">Professional Experience</h2>
 
-  <div class="timeline">
+<div class="space-y-12">
 
-    <div class="timeline-item">
-      <h3>Squarepoint Capital — Integration & Deployment Analyst</h3>
-      <p>2024–Present</p>
-      <ul>
-        <li>Trading flow onboarding & migration</li>
-        <li>Automation scripts improving efficiency 25%</li>
-        <li>Cross-team global integration coordination</li>
-      </ul>
-    </div>
+<div class="bg-white p-8 rounded-xl shadow border-l-4 border-blue-600">
+<h3 class="text-xl font-bold">Integration & Deployment Analyst</h3>
+<p class="text-blue-600 font-medium">Squarepoint Capital | 2024 - Present</p>
+<ul class="list-disc list-inside mt-4 space-y-2">
+<li>Onboarded and migrated trading flows across 10+ global tech teams, reducing integration time by 15%.</li>
+<li>Performed 20+ monthly pipe-cleaning validations for Equities & Derivatives asset classes.</li>
+<li>Active member of Change Advisory Board reviewing 50+ production changes monthly maintaining 99.9% uptime.</li>
+<li>Developed 10+ automation scripts improving operational efficiency by 25%.</li>
+<li>Resolved 100+ trade flow issues with 95% first-response success rate.</li>
+</ul>
+</div>
 
-    <div class="timeline-item">
-      <h3>Singapore Exchange FX — Technical Analyst</h3>
-      <p>2022–2024</p>
-      <ul>
-        <li>FX client system deployments</li>
-        <li>Latency & performance optimization</li>
-        <li>Linux & FIX based integrations</li>
-      </ul>
-    </div>
+<div class="bg-white p-8 rounded-xl shadow border-l-4 border-gray-300">
+<h3 class="text-xl font-bold">Technical Analyst</h3>
+<p class="text-blue-600 font-medium">Singapore Exchange FX Systems | 2022 - 2024</p>
+<ul class="list-disc list-inside mt-4 space-y-2">
+<li>Managed FX client accounts including CBA, Nomura, ICICI Bank.</li>
+<li>Deployed 20+ trading solutions using Linux backends & Java/C++ frontends.</li>
+<li>Improved system performance by 10% through regression latency analysis.</li>
+<li>Reduced latency by 10% and increased efficiency by 20%.</li>
+<li>Integrated algorithmic trading systems using JavaScript and Bash scripting.</li>
+</ul>
+</div>
 
-    <div class="timeline-item">
-      <h3>FlexTrade Systems — Associate Technical Analyst</h3>
-      <p>2021–2022</p>
-      <ul>
-        <li>FIX onboarding & certification</li>
-        <li>API & broker integrations</li>
-        <li>Real-time client trading support</li>
-      </ul>
-    </div>
+<div class="bg-white p-8 rounded-xl shadow border-l-4 border-gray-300">
+<h3 class="text-xl font-bold">Associate Technical Analyst</h3>
+<p class="text-blue-600 font-medium">Flextrade Systems | 2021 - 2022</p>
+<ul class="list-disc list-inside mt-4 space-y-2">
+<li>Managed FX clients including OCBC and Crescent Asset Management.</li>
+<li>Integrated internal/external APIs increasing trade flow by 15%.</li>
+<li>Optimized FIX connectivity reducing downtime by 16%.</li>
+<li>Certified FIX connections in Production and UAT environments.</li>
+<li>Provided real-time trading support ensuring 10% rise in client satisfaction.</li>
+</ul>
+</div>
 
-  </div>
+</div>
+</div>
 </section>
 
-<section id="skills">
-  <h2 class="section-title">Core Skills</h2>
+<section id="skills" class="py-20 bg-gray-100">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold mb-12 text-center">Skills & Tools</h2>
 
-  <div class="skills">
-    <span>Linux</span>
-    <span>Bash</span>
-    <span>FIX Protocol</span>
-    <span>KDB+</span>
-    <span>JavaScript</span>
-    <span>Git</span>
-    <span>JIRA</span>
-    <span>Trading Systems</span>
-    <span>Client Onboarding</span>
-    <span>Integration</span>
-    <span>Production Change Control</span>
-    <span>Financial Markets</span>
-    <span>Risk Analysis</span>
-  </div>
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-white p-6 rounded shadow">
+<h4 class="font-bold text-blue-600 mb-4">Core Skills</h4>
+<div class="flex flex-wrap gap-2 text-sm">
+<span class="bg-gray-100 px-3 py-1 rounded">Financial Markets</span>
+<span class="bg-gray-100 px-3 py-1 rounded">Trading Systems</span>
+<span class="bg-gray-100 px-3 py-1 rounded">Risk Analysis</span>
+<span class="bg-gray-100 px-3 py-1 rounded">FIX Protocol</span>
+<span class="bg-gray-100 px-3 py-1 rounded">Latency Optimization</span>
+<span class="bg-gray-100 px-3 py-1 rounded">Project Management</span>
+</div>
+</div>
+
+<div class="bg-white p-6 rounded shadow">
+<h4 class="font-bold text-blue-600 mb-4">Technical Tools</h4>
+<div class="flex flex-wrap gap-2 text-sm">
+<span class="bg-gray-100 px-3 py-1 rounded">Linux</span>
+<span class="bg-gray-100 px-3 py-1 rounded">Bash</span>
+<span class="bg-gray-100 px-3 py-1 rounded">KDB+</span>
+<span class="bg-gray-100 px-3 py-1 rounded">JavaScript</span>
+<span class="bg-gray-100 px-3 py-1 rounded">Git</span>
+<span class="bg-gray-100 px-3 py-1 rounded">JIRA</span>
+<span class="bg-gray-100 px-3 py-1 rounded">Salesforce</span>
+</div>
+</div>
+
+<div class="bg-white p-6 rounded shadow">
+<h4 class="font-bold text-blue-600 mb-4">Education & Certifications</h4>
+<p class="text-sm font-bold">PG-DAC</p>
+<p class="text-xs text-gray-500">Sunbeam Institute, Pune (2021)</p>
+
+<p class="text-sm font-bold mt-4">B.Tech</p>
+<p class="text-xs text-gray-500">Government College of Engineering, Jalgaon (2019)</p>
+
+<ul class="list-disc list-inside text-xs text-gray-500 mt-3">
+<li>Programming Foundations – Duke University (Coursera)</li>
+<li>Financial Markets & Trading (Udemy)</li>
+</ul>
+</div>
+
+</div>
+</div>
 </section>
 
-<section id="contact">
-  <h2 class="section-title">Contact</h2>
-
-  <div class="contact">
-    <p>Email: <a href="mailto:koshtinikita31@gmail.com">koshtinikita31@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/nikita-koshti-54808a1ab/" target="_blank">View Profile</a></p>
-  </div>
-</section>
-
-<footer>
-  © 2026 Nikita Koshti — FinTech Integration Specialist
+<footer class="bg-white py-10 border-t text-center text-gray-500 text-sm">
+© 2026 Nikita Koshti. All rights reserved.
 </footer>
 
 </body>
